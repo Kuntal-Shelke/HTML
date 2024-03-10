@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .flex{
+            display: flex;
+        }
+         .Navbar{
+            justify-content:space-between;
+            height:50px;
+            background-color: rgb(194, 189, 189);
+         }
+         .List{
+            display: flex;
+            list-style: none;
+            padding-top: 15px;
+         }
+         li{
+            margin: 0px 5px;
+         }
+         .left{
+            margin: 0px 10%;
+         }
+         .hero{
+            grid-template-columns:1fr 1fr;
+            display: grid;
+         }
+         .leftside
+         {
+            background-color: hwb(180 90% 5%);
+            height: 100%;
+         }
+    
+          .rightside{
+            background-color: hwb(180 90% 5%);
+            height: 400px;
+          }
+          .Info{
+            margin-top: 10%;
+          }
+          .Button{
+            color:black;
+            background-color: blue;
+            padding: 5px;
+            border-radius: 6px;
+            margin: 20px 5px;
+            border: none;
+          }
+          .Image{
+            margin-top:50px;
+            width:500px;
+            height: 300px;
+          }
+    </style>
+</head>
+<body>
+    <nav class="Navbar flex">
+        <div class="List left">
+            CODESEED
+        </div>
+        <div class="left">
+            <ul class="List">
+                <li> HOME </li>
+                <li> ABOUT </li>
+                <li> CONTACT </li>
+                <li> LOGIN </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="hero">
+        <div class="leftside">
+            <center>
+               <h2 class="Info">
+                Hello There ,I am Kuntal Shelke <br> 
+                I am a Web developer
+               </h5>
+               <button class="Button">Hire Me</button>
+               <button class="Button">Download Resume </button>
+            </center>
+        </div>
+        <div class="rightside">
+             <center>
+                <img src="UIDeveloper.jpeg" alt="" class="Image">
+             </center>
+        </div>
+    </div>
+</body>
+</html>

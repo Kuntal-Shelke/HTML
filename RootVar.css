@@ -1,0 +1,8 @@
+:root{
+    --background-color: rgb(243, 235, 235);
+    --color:rgb(100, 185, 15);
+}
+#Comman{
+    color: var(--color);
+    background-color: var(--background-color);
+}
