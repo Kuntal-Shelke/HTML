@@ -6,25 +6,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div {
-            height: 200px;
-            width: 200px;
-            border: 10px solid red;
-            background-color: blue;
-            /* transform: rotate(45deg); */
+        * {
+            margin: 0;
+            padding: 0;
         }
         
-        div:hover {
-            transform: scale(2);
+        .parent {
+            display: flex;
+            justify-content: space-between;
+            height: 20px;
+            background-color: rgb(244, 240, 240);
+            padding: 15px 0px;
+            color: black;
+            /* border-bottom: 1px black solid; */
+            /* animation: myAnimation 20s steps(5) 0s infinite normal; */
+        }
+        
+        #list {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+        }
+        
+        a {
+            text-decoration: none;
+            margin: 0px 40px;
+        }
+        
+        a:hover {
+            background-color: yellow;
+            color: brown;
+            font-size: 20px;
+        }
+        /*         
+        @keyframes myAnimation {
+            from {
+                background-color: rgb(244, 240, 240);
+            }
+            to {
+                background-color: rgb(88, 230, 23)
+            }
+        } */
+        
+        #img {
+            height: 50vh;
+            width: 92vw;
+            background-image: url("vmeij_512.webp");
+            background-size: cover;
+        }
+        
+        .text {
+            position: relative;
+            top: 200px;
+            left: 100px;
+        }
+        
+        #heading {
+            font-size: 60px;
+            margin-top: 35px;
+        }
+        
+        #btn {
+            padding: 7px;
+            background-color: yellow;
+            color: black;
+            border: 1px solid rgb(156, 156, 138);
+            border-radius: 10px;
+            border-bottom: 1px solid rgb(85, 85, 83);
+            margin-top: 30px;
         }
     </style>
 </head>
 
 <body>
-    <div class="f">
+    <div class="parent">
+        <div class="left">
+            <a>JUNG</a>
 
+        </div>
+        <div class="right">
+            <ul id="list">
+                <li><a>HOME</a></li>
+                <li><a>CONTACT</a></li>
+                <li><a>CV</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="img">
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nisi recusandae et libero maxime quae aspernatur consequatur, ullam illo error non obcaecati lab ore, dolorem quisquam suscipit iure asperiores dolores incidunt.</p>
     </div>
 
+    <div class="work">
+        <h1 id="heading">
+            <center>Work</center>
+        </h1>
+    </div>
+    <center>
+        <button id="btn"> SMILE </button>
+    </center>
+    <script src="Mode.js">
+    </script>
 </body>
+
+</html>
 
 </html>
